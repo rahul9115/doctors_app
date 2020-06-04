@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".PatientProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:isScrollContainer="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/patientid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Patient ID"
+                        android:drawableLeft="@drawable/ic_action_id"
+                        android:textColor="@color/cardview_light_background"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        android:textColor="@color/cardview_light_background"
+                        android:textColorHint="@color/colorAccent"
+                        android:drawableLeft="@drawable/ic_action_firstname"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_action_firstname"
+                        android:textSize="15dp"
+                        android:hint="Last Name"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/cardview_light_background">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <EditText
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Gender"
+                        android:drawableLeft="@drawable/ic_action_firstname"
+                        android:textColor="@color/cardview_light_background"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--<com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <EditText
+                        android:id="@+id/gender_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/address_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_action_address"
+                        android:textColor="@color/cardview_light_background"
+                        android:textColorHint="@color/colorAccent"
+                        android:hint="Address Line1"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                    </Spinner>
+
+                    <EditText
+                        android:id="@+id/address_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_light_background"
+                        android:drawableLeft="@drawable/ic_action_address"
+                        android:textColorHint="@color/colorAccent"
+                        android:hint="Address Line2"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/district_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined">
+                </Spinner>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/country_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_light_background"
+                        android:drawableLeft="@drawable/ic_action_address"
+                        android:textColorHint="@color/colorAccent"
+                        android:hint="Country"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/pincode_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_light_background"
+                        android:textColorHint="@color/colorAccent"
+                        android:drawableLeft="@drawable/ic_action_mobile"
+                        android:hint="Pincode"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/email_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_light_background"
+                        android:textColorHint="@color/colorAccent"
+                        android:drawableLeft="@drawable/ic_action_email"
+                        android:hint="Email"
+                        android:textSize="15dp"
+                        android:singleLine="true">>
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <EditText
+                        android:id="@+id/mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/cardview_light_background"
+                        android:textColorHint="@color/colorAccent"
+                        android:hint="Mobile Number"
+                        android:drawableLeft="@drawable/ic_action_mobile"
+                        android:textSize="15dp"
+                        android:singleLine="true">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bottom_vw"
+                    android:layout_alignParentBottom="true">
+                    
+                    <Button
+                        android:id="@+id/done"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/cardview_light_background"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"
+                        android:text="Done">
+                    </Button>
+            </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

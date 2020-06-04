@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".ScheduleAppointmentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/complaint_txt_fld"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:hint="Problem"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/doctors_availablity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <!--android:onClick="btncal_OnClick"-->
+
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:editable="false"
+                    android:hint="@string/date"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/search_dr"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:text="SEARCH AVAILABLE DOCTORS"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/nodoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="No doctors available"
+                    android:textSize="17dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/doctor_list_text"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Select Doctor"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorHint="@color/colorAccent"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/searchAvlSlotBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/cardview_light_background"
+                    android:text="SEARCH AVAILABLE SLOT"
+                    android:textColor="@color/colorAccent"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/done_vw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/noslot"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="No doctors available"
+                    android:textSize="17dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/slot_list_txt_vw"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Slots"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorHint="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/dontBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/cardview_light_background"
+                    android:text="DONE"
+                    android:textColor="@color/colorAccent" />
+                &lt;!&ndash; android:onClick="btnfix"&ndash;&gt;
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

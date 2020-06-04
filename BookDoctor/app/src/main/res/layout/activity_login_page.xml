@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LoginPage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="161dp"
+        android:layout_height="135dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginBottom="546dp"
+        app:srcCompat="@drawable/medical" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:layout_marginBottom="445dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="357dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:cardCornerRadius="25dp"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="237dp"
+        app:cardBackgroundColor="#EDECE5" >
+
+        <RelativeLayout
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Login"
+                android:textColor="#E91E63"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:layout_marginBottom="146dp"
+        android:text="create Account"
+        android:textColor="#E91E63"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:layout_marginBottom="82dp"
+        android:text="Forgot Password"
+        android:textColor="#E91E63"
+        android:textSize="20sp" />
+
+</RelativeLayout>

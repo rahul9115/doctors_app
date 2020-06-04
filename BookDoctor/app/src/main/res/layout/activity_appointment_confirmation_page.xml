@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".AppointmentConfirmationPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="First Name"
+                    android:textSize="15dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="text">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Last Name"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Gender"
+                    android:inputType="text">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Address"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/email"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:textColor="@color/cardview_light_background"
+                android:textColorHint="@color/colorAccent"
+                android:hint="Email"
+                android:inputType="text">
+
+            </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/mobile_no"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:textColor="@color/cardview_light_background"
+                android:textColorHint="@color/colorAccent"
+                android:hint="Mobile Number"
+                android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/done_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@color/cardview_light_background"
+                android:text="Please Confirm Your Appointment"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
