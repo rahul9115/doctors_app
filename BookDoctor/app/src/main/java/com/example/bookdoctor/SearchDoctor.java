@@ -47,6 +47,7 @@ public class SearchDoctor extends AppCompatActivity {
         button=findViewById(R.id.done);
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
+
         materialSearchView = findViewById(R.id.search_view);
         materialSearchView.setSuggestions(SUGGESTION);
 
@@ -77,20 +78,20 @@ public class SearchDoctor extends AppCompatActivity {
                "05:00 PM-07:00 PM" );
 
 
-        /*materialSearchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
+        materialSearchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
             @Override
             public void onSearchViewShown() {
 
-            }*/
+            }
 
-            /*@Override
+            @Override
             public void onSearchViewClosed() {
                // if(arrayAdapter.getCount()>0)
                 arrayAdapter.clear();
                 arrayAdapter.addAll(SUGGESTION);
                 arrayAdapter.notifyDataSetChanged();
             }
-        });*/
+        });
         materialSearchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
